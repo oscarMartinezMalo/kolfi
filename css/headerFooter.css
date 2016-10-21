@@ -1,0 +1,239 @@
+﻿nav ul{
+    margin:16px 0px 16px 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+* {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+     box-sizing:content-box ; 
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(227, 106, 19, 0.5);
+    z-index: 25;
+    transition:ease 1s;
+    -moz-transition:ease 1s;
+    -o-transition:ease 1s;
+    -webkit-transition:ease 1s;
+}
+
+
+.logo {
+    float: left;
+    margin-left: 105px;
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: white;
+    -moz-border-radius: 20% 20% 70% 70%;
+    -webkit-border-radius: 20% 20% 70% 70%;
+    border-radius: 20% 20% 70% 70%;
+    -webkit-animation: animationLogo 4000ms linear both;
+    animation: animationLogo 4000ms linear both;
+    /*text-align: center;*/
+    /*font-size:20px;*/
+}
+
+.navBarHeader {
+    float: right;
+    margin-right: 5%;
+    -moz-animation: animationNav 4000ms linear both;
+    -o-animation: animationNav 4000ms linear both;
+    -webkit-animation: animationNav 4000ms linear both;
+    animation: animationNav 4000ms linear both;     
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+     
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        /*text-shadow: -1px 0 dimgray, 0 -1px dimgray;*/
+    }
+a {
+    color: black;
+    text-decoration: none;
+}
+        nav ul li a:hover {
+            color: dimgray;
+            text-decoration:underline;
+            /*text-shadow: 0px 0px 10px gray;*/
+        }
+/*ul{
+    height:40px;
+    margin-top:0px;
+    margin-bottom:10px;
+
+}*/
+#phoneIconLink {
+    position: relative;
+    float: right;
+    top: 10px;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+#phoneIconLink {
+    transition:ease 1s;
+    -moz-transition:ease 1s;
+    -o-transition:ease 1s;
+    -webkit-transition:ease 1s;
+}
+
+#telNumber{
+    display:none;
+}
+
+#phoneIcon {
+    height: 30px;
+    width: 30px;
+}
+#phoneIcon:hover{
+    cursor:pointer;
+}
+
+footer {
+    background-size: cover;
+    background-position: 75% 45%;
+    background-image: url(../images/heroImage.jpg);
+}
+
+    footer .logo {
+        margin-right: 3%;
+        margin-left: 105px;
+        padding: 0px;
+    }
+
+    footer nav ul {
+        margin: 0px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
+        footer nav ul li {
+            margin-left: 0px;
+            margin-right: 0.7em;
+        }
+
+            footer nav ul li a {
+                font-size: 0.7em;
+                color: white;
+            }
+
+#footContainer {
+    padding-bottom: 20px;
+}
+
+#copyRight {
+    margin: 0px;
+    color: white;
+    font-size: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+/*  Burger icon */
+
+.logoBurguer {
+    display: none;
+    width: 25px;
+    height: 25px;
+    /*display: flex;*/
+    float: left;
+    align-items: center;
+    margin: 10px 0 0 20px;
+    transition:ease 1s;
+    -moz-transition:ease 1s;
+    -o-transition:ease 1s;
+    -webkit-transition:ease 1s;
+}
+
+.logoBurguer:hover{
+    cursor:pointer;
+}
+
+#burguerStyle, #burguerStyle::after, #burguerStyle::before {
+    content: '';
+    position: relative;
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: black;
+    transition:ease 1s;
+    -moz-transition:ease 1s;
+    -o-transition:ease 1s;
+    -webkit-transition:ease 1s;
+}
+
+    #burguerStyle::before {
+        bottom: 9px;
+    }
+
+    #burguerStyle::after {
+        top: 7px;
+    }
+
+
+@media (max-width : 762px), only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    header {
+        background-color: rgb(245, 124, 37);
+    }
+
+        header div {
+            text-align: center;
+            background-color: rgba(227, 106, 19, 1);
+        }
+
+        header .logo {
+            float: none;
+            margin: 0px;
+            -webkit-animation: none;
+            animation: none;                
+        }
+
+    #phoneIcon {
+        top: 0px;
+    }
+
+    #phoneIconLink p {
+        margin: 5px;
+    }
+
+
+    #phoneIconLink {
+        top: 0px;
+    }
+
+    #logoWrap {
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+    }
+
+    header .navBarHeader {
+        float: none;
+        margin-right: 0px;
+        -webkit-animation: none;
+        animation: none;
+        text-align: center;
+    }
+
+        header .navBarHeader ul, header .navBarHeader ul li {
+            margin: 0px;
+            padding: 3px;
+        }
+
+    .logoBurguer {
+        margin: 4px 0 0 20px;
+        display: flex;
+    }
+}

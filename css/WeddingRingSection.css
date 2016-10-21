@@ -1,0 +1,117 @@
+﻿#weddingRings {
+    overflow: hidden;
+    background-color: darkgray;
+}
+
+#wrapBelt {
+    width: 200%;
+    position: relative;
+    left: 0%;
+    -moz-transition: left ease 1s;
+    -o-transition: left ease 1s;
+    -webkit-transition: left ease 1s;
+    transition: left ease 1s;
+}
+
+#principalImages, #SecondoryImages {
+    float: left;
+    width: 50%;
+    padding-bottom: 2%;
+}
+
+#SecondoryImages {
+    display: none;
+}
+
+.sameImages {
+    width: 60%;
+    height: 15em;
+    margin: auto;
+    background-size: cover;
+    background-position: 50% 60%;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: gray;
+}
+
+#womanweddingRing {
+    background-image: url(../images/wedding1.jpg);
+}
+
+#womandiamondRing {
+    background-image: url(../images/wedding2.jpg);
+}
+
+#menWeddingRing {
+    background-image: url(../images/wedding3.jpg);
+}
+
+#imageWedding {
+    background-image: url(../images/wedding.jpg);
+}
+
+    /*#imageWedding:hover #goRight {
+        right: 0%;
+    }*/
+
+
+
+#weddingRings p {
+    text-align: center;
+    color: gray;
+    font-size: 1.2em;
+}
+
+    #weddingRings p::first-letter {
+        font-family: Georgia;
+        font-size: 1.5em;
+    }
+
+#goLeft {
+    margin: 1% auto;
+    transition: right ease 1s;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: gray;
+    background-image: url('../icons/321-arrow-left2.svg');
+    background-color: rgba(227, 106, 19, 0.55);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    cursor: pointer;
+}
+
+
+
+#goRight {
+    margin:1% auto;
+    transition: right ease 1s;
+    /*position: absolute;*/
+    right: 100%;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-image: url('../icons/317-arrow-right2.svg');
+    background-color: rgba(227, 106, 19, 0.55);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1050px) {
+    /*#goRight {
+        right: 0%;
+    }*/
+
+    .sameImages {
+        width: 100%;
+    }
+}

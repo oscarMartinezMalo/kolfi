@@ -1,0 +1,98 @@
+﻿#sideBar {
+    position: fixed;
+    z-index: 5;
+    width: 100px;
+    left: 0px;
+    background-color: #333;
+    color: rgba(241, 104, 16,1);
+    transition: 0.4s ease;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sideBar hr {
+    border-color: black;
+    margin-bottom:5px;
+}
+
+#sideBar h1 {
+    padding: 0px;
+}
+.list-group-item{
+padding:0px;
+}
+#sideBar a {
+    text-decoration: none;
+}
+.panel-group{
+    width:99%;
+}
+#sideBar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.panel {
+        border:0px;
+}
+.panel-heading:hover {
+    color: rgba(241, 104, 16,0.9);
+}
+
+.panel-default>.panel-heading{
+    background-color:rgba(241, 104, 16,0.4) ;
+
+}
+.panel-default>.panel-heading:hover{
+    background-color:dimgrey ;
+}
+
+    #sideBar ul li {
+        /*font-size: 16px;*/
+        padding-bottom: 10px;
+        padding-right: 5px;
+        text-align: right;
+    }
+
+        #sideBar ul li:hover {
+            color: rgba(241, 104, 16,0.9);
+            cursor: pointer;
+            -moz-box-shadow: rgba(241, 104, 16,0.7);
+            -webkit-box-shadow: rgba(241, 104, 16,0.7);
+            box-shadow: rgba(241, 104, 16,0.7);
+        }
+
+#sideBarToggler {
+    display: none;
+}
+
+    #sideBarToggler:checked ~ #sideBar {
+        left: 0px;
+    }
+
+    #sideBarToggler:checked ~ header label span {
+        background: transparent;
+    }
+
+        #sideBarToggler:checked ~ header label span:after {
+            transform-origin: right;
+            transform: rotate(45deg);
+        }
+
+        #sideBarToggler:checked ~ header label span:before {
+            transform-origin: right;
+            transform: rotate(-45deg);
+        }
+
+    #sideBarToggler:checked ~ #container {
+        padding-left: -100px;
+    }
+
+    #container {
+
+        transition: 0.4s ease;
+    }
+

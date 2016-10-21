@@ -1,0 +1,147 @@
+﻿#socialSection {
+    background-color: darkgray;
+    width: 100%;
+    overflow: auto;
+}
+
+#socialWrap {
+    margin: 0% auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.boxWrapping {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    margin: 1%;
+}
+
+    .boxWrapping a {
+        background-color: rgba(227, 106, 19, 0.5);
+        top: 12px;
+        position: relative;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 60px;
+        width: 60px;
+        transition: ease 0.45s;
+        margin: auto;
+        border-radius: 50%;
+        font-size: 28px;
+    }
+
+        .boxWrapping a:hover {
+            top: 0px;
+            background-color: rgba(227, 106, 19, 1);
+        }
+
+            .boxWrapping a:hover + .socialBox {
+                width: 0%;
+            }
+
+.socialBox {
+    border-top: 1px groove rgba(227, 106, 19, 1);
+    margin: 0px;
+    width: 80%;
+    height: 40px;
+    background-color: darkgray;
+    position: relative;
+    display: block;
+    margin: auto;
+    transition: ease 0.35s;
+}
+
+#twitter {
+    background-image: url(../icons/407-twitter.svg);
+    background-color: rgb(245, 124, 37);
+    /*background-color: #55acee;
+    -moz-box-shadow: 0px 0px 5px #55acee;
+    -webkit-box-shadow: 0px 0px 5px #55acee;
+    box-shadow: 0px 0px 5px #55acee;*/
+}
+
+    #twitter:hover {
+        background-color: #55acee;
+        -moz-box-shadow: 0px 0px 5px #55acee;
+        -webkit-box-shadow: 0px 0px 5px #55acee;
+        box-shadow: 0px 0px 5px #55acee;
+    }
+
+#pinterest {
+    background-image: url(../icons/467-pinterest2.svg);
+    background-color: rgb(245, 124, 37);
+}
+
+    #pinterest:hover {
+        background-color: #C92228;
+        -moz-box-shadow: 0px 0px 5px #C92228;
+        -webkit-box-shadow: 0px 0px 5px #C92228;
+        box-shadow: 0px 0px 5px #C92228;
+    }
+
+#facebook {
+    background-image: url(../icons/401-facebook.svg);
+    background-color: rgb(245, 124, 37); 
+}
+
+    #facebook:hover {
+        background-color: #3b5998;
+        -moz-box-shadow: 0px 0px 5px #3b5998;
+        -webkit-box-shadow: 0px 0px 5px #3b5998;
+        box-shadow: 0px 0px 5px #3b5998;
+    }
+
+#googleplus {
+    background-image: url(../icons/396-google-plus.svg);
+    background-color: rgb(245, 124, 37);
+}
+
+    #googleplus:hover {
+        background-color: #db3236;
+        -moz-box-shadow: 0px 0px 5px #db3236;
+        -webkit-box-shadow: 0px 0px 5px #db3236;
+        box-shadow: 0px 0px 5px #db3236;
+    }
+
+#youtube {
+    background-image: url(../icons/414-youtube.svg);
+    background-color: rgb(245, 124, 37);
+}
+
+    #youtube:hover {
+        background-color: #e52d27;
+        -moz-box-shadow: 0px 0px 5px #e52d27;
+        -webkit-box-shadow: 0px 0px 5px #e52d27;
+        box-shadow: 0px 0px 5px #e52d27;
+    }
+
+.bar {
+    width: 25%;
+    border: 0px;
+    border-top: 1px solid rgba(227, 106, 19, 1);
+    padding: 0px;
+    margin: 2% auto;
+    padding-bottom: 2%;
+}
+
+.biglink {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(207, 98, 19);
+    -moz-transition: 0.45s;
+    -o-transition: 0.45s;
+    -webkit-transition: 0.45s;
+    transition: 0.45s;
+    margin-bottom: 5%;
+}
+
+    .biglink:hover {
+        color: black;
+        text-shadow: 0px 0px 50px rgba(227, 106, 19, 0.7);
+    }

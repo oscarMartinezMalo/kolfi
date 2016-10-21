@@ -1,0 +1,52 @@
+﻿@import url('headerFooter.css');
+@import url('heroSection.css');
+@import url('jewelrySection.css');
+@import url('mediaSection.css');
+@import url('WeddingRingSection.css');
+@import url('socialSection.css');
+/*@import url('contactSection.css');*/
+/*@import url('bounce.css');*/
+@import url('sideBar.css');
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    overflow: hidden;
+}
+
+article {
+    overflow: hidden;
+}
+
+h3 {
+    margin-top: 2%;
+    margin-bottom:2%;
+    background-color: rgba(227, 106, 19, 0.1);
+    text-align: center;
+    color: rgba(227, 106, 19, 0.9);
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    font-family: Georgia;
+    font-weight: 200;
+}
+
+    h3::first-letter {
+        text-transform: uppercase;
+        color: black;
+        font-size: 1.7em;
+    }
+
+p {
+    font-family: Georgia;
+    color: dimgray;
+    font-size: 16px;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    p {
+        font-size: 14px;
+    }
+}

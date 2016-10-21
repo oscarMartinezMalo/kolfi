@@ -1,0 +1,114 @@
+﻿#Jewelry {
+    /*background-color: rgba(227, 106, 19, 0.55);*/
+    background-color: darkgray;
+    overflow: auto;
+}
+
+/*#Jewelry h3 {
+        padding-top: 55px;
+    }*/
+
+#wrapRoundIcons {
+    display: flex;
+    max-width: 1000px;
+    margin: 10px auto;
+    margin-top: 0px;
+    align-items: center;
+    padding-bottom: 4%;
+    overflow: hidden;
+}
+
+a[class^="icon"] {
+    width: 100px;
+    height: 100px;
+    -moz-box-shadow: 0px 0px 25px black;
+    -webkit-box-shadow: 0px 25px 5px black;
+    box-shadow: 0px 0px 25px black;
+    display: inline-flex;
+    align-content: center;
+    margin: 20px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition:ease 1s;
+    -moz-transition:ease 1s;
+    -o-transition:ease 1s;
+    -webkit-transition:ease 1s;
+}
+
+    a[class^="icon"]:hover {
+        /*-webkit-animation: animationIcons 1000ms linear both;
+  animation: animationIcons 1000ms linear both;*/
+        transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        box-shadow: 0px 0px 25px rgba(227, 106, 19, 1);
+        -moz-box-shadow: 0px 0px 25px rgba(227, 106, 19, 1);
+        -webkit-box-shadow: 0px 25px 5px rgba(227, 106, 19, 1);
+        box-shadow: 0px 0px 25px rgba(227, 106, 19, 1);
+    }
+
+#diamond {
+    background-image: url(../icons/diamonds.gif);
+    width: 130px;
+    height: 130px;
+    order: 4;
+}
+
+#diamondRing {
+    background-position: 25% 50%;
+    background-image: url(../icons/engagement.jpg);
+    order: 1;
+}
+
+#bracelate {
+    background-image: url(../icons/bracelet.jpg);
+    order: 2;
+}
+
+#earings {
+    background-image: url(../icons/earrings.jpg);
+    order: 3;
+}
+
+#necklace {
+    background-image: url(../icons/necklace.JPG);
+    order: 5;
+}
+
+#watch {
+    background-image: url(../icons/watch.jpg);
+    order: 6;
+}
+
+#ring {
+    background-image: url(../icons/ring.jpg);
+    order: 7;
+}
+
+
+@media screen and (max-width: 1050px) {
+    #wrapRoundIcons {
+        display: block;
+        text-align: center;
+    }
+
+    #diamond {
+        display: block;
+    }
+
+    div[class$="Jewelry"] {
+        display: inline-block;
+    }
+}
+
+@media (max-width : 650px), only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    a[class^="icon"]:hover {
+        -webkit-animation: none;
+        animation: none;
+    }
+}

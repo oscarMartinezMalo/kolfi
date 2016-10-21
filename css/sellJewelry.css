@@ -1,0 +1,103 @@
+﻿@import url('sellSection.css');
+@import url('headerFooter.css');
+@import url('sideBarSell.css');
+
+html, body, .ng-scope{
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+   line-height: normal;
+}
+
+#container {
+    padding-left: 100px;
+    margin-top: 0px;
+    position: relative;
+    min-height: 100%;
+    margin-bottom: -60px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+#container::after{
+    content:"";
+    display: block;
+}
+
+#container::after, footer{
+    height: 60px;
+}
+
+#wrapH3{
+    background-color: rgba(227, 106, 19, 0.1);
+    text-align: center;
+    margin: 0px;
+    /*height:46px;*/
+}
+label{
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-right: 1px;
+}
+h3 {
+    background-color: dimgray;
+    width:100%;
+    text-align: center;
+    color: rgba(227, 106, 19, 0.9);
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    font-family: Georgia;
+    font-weight: 200;
+    margin: 0px;
+    /*position: fixed;*/
+    /*margin-left:50%;*/
+    z-index:55;
+    line-height: none;
+}
+
+    h3::first-letter {
+        text-transform: uppercase;
+        color: black;
+        font-size: 1.7em;
+    }
+ol,ul{
+        margin-top: 0; 
+        margin-bottom: 0px; 
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: rgba(227, 106, 19, 0.5);
+    border-color: rgba(227, 106, 19, 1);
+}
+/*#sideBar ul li {
+        font-size: 16px;
+        padding-bottom: 15px;
+        text-align: right;
+    }
+
+        #sideBar ul li:hover {
+            color: rgba(241, 104, 16,0.9);
+            cursor: pointer;
+            -moz-box-shadow: rgba(241, 104, 16,0.7);
+            -webkit-box-shadow: rgba(241, 104, 16,0.7);
+            box-shadow: rgba(241, 104, 16,0.7);
+        }*/
+.form-control:focus{
+    outline: none;
+    box-shadow:0px 0px 10px rgba(227, 106, 19, 0.3);
+    border-color: rgba(227, 106, 19, 0.9);
+}
+
+@media (max-width : 762px), only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #container {
+          /*margin-top: 60px;*/
+          padding-left: 0px;
+          padding-top:60px;
+    }
+     #sideBar {
+          left: -100px;
+    }
+}

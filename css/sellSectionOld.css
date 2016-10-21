@@ -1,0 +1,207 @@
+﻿#asideImageboxWrap {
+    display: flex;
+    min-height: 90%;
+}
+
+#asideContainer {
+    min-width: 110.67px;
+}
+
+aside {
+    background-color: rgba(227, 106, 19, 0.5);
+    /*width: 120px;*/
+    height: 100%;
+    position: fixed;
+    /*top:50%;
+    margin-top:-251px;*/
+}
+
+    aside ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+
+        aside ul content {
+            font-size: 1.2em;
+            color: rgba(227, 106, 19, 1);
+        }
+
+        aside ul li input {
+        }
+
+        aside ul li {
+            text-align: right;
+        }
+
+    aside hr {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    aside input[type='checkbox']:hover, aside label {
+        cursor: pointer;
+    }
+
+#ImagesBoxSection {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+#sortBar {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(227, 106, 19, 0.5);
+    z-index: 50;
+    border-radius: 0px 0px 50px 50px;
+    text-align: center;
+}
+
+#sortByPrice {
+    margin-top: 15px;
+    background-color: rgba(227, 106, 19, 0.0);
+    font-size: 13px;
+    width:150px;
+    border: none;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+#SellJewelryContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.imageElement {
+    margin: 50px;
+    display: inline-block;
+    width: 150px;
+    height: 300px;
+    text-align: left;
+    border-radius:3px;
+}
+
+    .imageElement:hover {
+        box-shadow: 0px 0px 5px gray;
+    }
+
+    .imageElement img {
+        width: 150px;
+        height: 173.52px;
+    }
+
+    .imageElement p {
+        margin: 3px;
+        margin-left: 15px;
+    }
+
+    .imageElement input {
+        width: 100%;
+        background-color: rgba(227, 106, 19, 0.5);
+        border: none;
+        border-radius: 3px;
+        text-transform: uppercase;
+        padding: 3px;
+        font-size: 12px;
+    }
+
+        .imageElement input:hover {
+            cursor: pointer;
+        }
+
+    .imageElement hr {
+        width: 80%;
+        border-color: rgba(227, 106, 19, 0.5);
+    }
+
+
+
+
+.blurEverything {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 35;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128,0.6);
+}
+
+#closeblur {
+    width: 15px;
+    height: 15px;
+    float: right;
+    padding: 5px;
+}
+
+#quickView {
+    width: 520px;
+    height: 520px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -260px;
+    margin-left: -260px;
+    background-color: rgba(227, 106, 19, 0.8);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    z-index: 50;
+}
+
+    #quickView div img {
+        height: 70px;
+        width: 70px;
+        border-radius: 3px;
+        padding: 1px;
+    }
+
+        #quickView div img.zoomImage:hover {
+            box-shadow: 0px 0px 5px black;
+        }
+
+
+div#quickView div img:first-child {
+    width: 400px;
+    height: 400px;
+    margin: 0px 50px 0px 50px;
+    border-radius: 3px;
+}
+
+#closeblur:hover {
+    cursor: pointer;
+}
+
+
+
+@media (max-width : 762px), only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .imageElement {
+        margin: 20px;
+    }
+
+    #quickView {
+        width: 300px;
+        height: 370px;
+        margin-top: -150px;
+        margin-left: -150px;
+    }
+
+        #quickView div img {
+            height: 46px;
+            width: 46px;
+        }
+
+    div#quickView div img:first-child {
+        width: 280px;
+        height: 280px;
+        margin: 0px 10px 0px 10px;
+        border-radius: 3px;
+    }
+}

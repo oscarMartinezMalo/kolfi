@@ -1,0 +1,78 @@
+﻿#sideBar {
+    position: fixed;
+    z-index: 5;
+    width: 85px;
+    left: -85px;
+    background-color: #333;
+    transition: 0.4s ease;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sideBar hr {
+    border-color: black;
+}
+
+#sideBar h1 {
+    padding: 0px;
+}
+
+#sideBar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+#sideBar ul li {
+        font-size: 16px;
+        padding-bottom: 15px;
+        text-align: right;
+    }
+
+ #sideBar ul li a{
+        color: rgba(241, 104, 16,0.6);
+    }
+            
+        #sideBar ul li a:hover {
+            color: rgba(241, 104, 16,0.9);
+            cursor: pointer;
+            -moz-box-shadow: rgba(241, 104, 16,0.7);
+            -webkit-box-shadow: rgba(241, 104, 16,0.7);
+            box-shadow: rgba(241, 104, 16,0.7);
+        }
+
+
+
+#sideBarToggler {
+    display: none;
+}
+
+    #sideBarToggler:checked ~ #sideBar {
+        left: 0px;
+    }
+
+    #sideBarToggler:checked ~ header label span {
+        background: transparent;
+    }
+
+        #sideBarToggler:checked ~ header label span:after {
+            transform-origin: right;
+            transform: rotate(45deg);
+        }
+
+        #sideBarToggler:checked ~ header label span:before {
+            transform-origin: right;
+            transform: rotate(-45deg);
+        }
+
+    #sideBarToggler:checked ~ #container {
+        padding-left: 85px;
+    }
+
+#container {
+    padding-left: 0px;
+    transition: 0.4s ease;
+}

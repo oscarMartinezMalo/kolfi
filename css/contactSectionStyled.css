@@ -1,0 +1,104 @@
+﻿#contactSectionStyled {
+    background-color: rgba(227, 106, 19, 0.2);
+}
+
+form {
+    max-width: 600px;
+    margin: 0% auto;
+    width: 50%;
+}
+
+.wrapInputText {
+    height: 25px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: rgba(227, 106, 19, 1);
+}
+
+.inputContact {
+    border: none;
+    border-left: 2px solid rgba(227, 106, 19, 0.5);
+    border-bottom: 2px solid rgba(227, 106, 19, 0.5);
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(227, 106, 19, 1);
+    -moz-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+    position: absolute;
+    z-index: 15;
+}
+
+.text {
+    color: rgba(227, 106, 19, 1);
+    top: 0px;
+    top: 3px;
+    left: 8px;
+    position: relative;
+    font-size: 21px;
+    font-style: oblique;
+    z-index: 5;
+    -moz-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+}
+
+    span::first-letter {
+        /*text-transform: uppercase;*/
+        color: black;
+        /*font-size: 1.7em;*/
+    }
+
+input[type="submit"] {
+    margin-top: 150px;
+    border: 2px solid rgba(227, 106, 19, 0.5);
+    width: 100%;
+    background-color: rgba(227, 106, 19, 1);
+    color: white;
+    margin-bottom: 10%;
+    font-size: 16px;
+    -moz-transition: ease 0.7s;
+    -o-transition: ease 0.7s;
+    -webkit-transition: ease 0.7s;
+    transition: ease 0.7s;
+    padding: 5px;
+}
+
+    input[type='submit']:hover {
+        background-color: rgba(227, 106, 19, 0.5);
+        color: black;
+    }
+
+textarea {
+    height: 10em;
+    font-size: 18px;
+}
+
+p:first-letter{
+    color:black;
+    text-transform:uppercase;
+}
+
+    input:focus + p, textarea:focus + p {
+        top: -15px;
+        left: 15px;
+        font-size: 12px;
+        color: black;
+    }
+
+    .upPosition + p, textarea:focus + p {
+        top: -15px;
+        left: 15px;
+        font-size: 12px;
+        color: black; 
+    }
