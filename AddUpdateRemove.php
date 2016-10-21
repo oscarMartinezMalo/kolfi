@@ -112,7 +112,7 @@
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-md-12" ng-show="filteredItems > 0">
+                    <div class="col-md-12 table-responsive" ng-show="filteredItems > 0">
                         <table class="table table-striped table-bordered">
                             <thead>
                             <th>Action</th>
